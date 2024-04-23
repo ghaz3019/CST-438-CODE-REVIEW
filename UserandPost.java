@@ -35,7 +35,7 @@ class Post {
     }
 }
 
-public class SocialMediaApp {
+public class UserandPost {
     private static Map<String, User> users = new HashMap<>();
     private static Map<String, Post> posts = new HashMap<>();
 
@@ -48,7 +48,7 @@ public class SocialMediaApp {
             System.out.println("1. Load input data.");
             System.out.println("2. Check visibility.");
             System.out.println("3. Retrieve posts.");
-            System.out.println("4. Search users by location.");
+            System.out.sprintln("4. Search users by location.");
             System.out.println("5. Exit.");
             System.out.print("Choose an option: ");
 
