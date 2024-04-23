@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+// Class representing a user in the social media app
 class User {
     String username;
     String displayName;
@@ -21,6 +22,7 @@ class User {
     }
 }
 
+// Class representing a post in the social media app
 class Post {
     String postId;
     String userId;
@@ -88,6 +90,7 @@ public class SocialMediaApp {
         }
     }
 
+    // Method to load user and post data from files
     private static void loadData() {
         users.clear();
         posts.clear();
@@ -121,6 +124,7 @@ public class SocialMediaApp {
         }
     }
 
+    // Method to parse the list of friends from string to list
     private static List<String> parseFriends(String friendsList) {
         List<String> friends = new ArrayList<>();
         String[] parts = friendsList.substring(1, friendsList.length() - 1).split(", ");
@@ -130,6 +134,7 @@ public class SocialMediaApp {
         return friends;
     }
 
+    // Method to check if a user can view a post
     private static void checkVisibility(Scanner scanner) {
         System.out.print("Input post ID: ");
         String postId = scanner.nextLine().trim();
@@ -150,6 +155,7 @@ public class SocialMediaApp {
         }
     }
 
+    // Method to retrieve posts accessible to a user
     private static void retrievePosts(Scanner scanner) {
         System.out.print("Input username: ");
         String username = scanner.nextLine().trim();
@@ -167,6 +173,7 @@ public class SocialMediaApp {
         }
     }
 
+    // Method to search users by location
     private static void searchUsersByLocation(Scanner scanner) {
         System.out.print("Input state location: ");
         String state = scanner.nextLine().trim();
